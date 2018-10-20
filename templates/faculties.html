@@ -1,0 +1,11 @@
+{% extends 'master.html'%}
+{% block mybody %}
+<br>
+<br>
+<h1> Faculties of this College </h1>
+<ul class="collection">
+    {% for fact in sendfact %}
+    <li class="collection-item">{{fact.name}}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
